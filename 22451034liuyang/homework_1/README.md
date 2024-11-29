@@ -27,4 +27,5 @@ void OpenGLWidget::paintGL()
 }
 ```
 结果如下图所示
+
 ![结果](./images/outcome.png "结果")

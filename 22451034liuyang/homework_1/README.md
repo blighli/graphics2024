@@ -51,7 +51,7 @@ void OpenGLWidget::paintGL()
 
 ![promote](./images/impl_3.png)
 
-- 设置`MainWindow`的布局（这里随意设置成了 `Grid Layout`）
+- 让`OpenGLWidget`铺满窗口，设置`MainWindow`的布局（这里随意设置成了 `Grid Layout`）
 
 ![layout](./images/impl_4.png)
 

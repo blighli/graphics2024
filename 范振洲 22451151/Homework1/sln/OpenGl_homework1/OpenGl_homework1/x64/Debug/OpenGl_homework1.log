@@ -1,0 +1,10 @@
+﻿  OpenGl_homework1.cpp
+E:\AnimationLearnHomeWork\graphics2024\范振洲 22451151\Homework1\sln\OpenGl_homework1\OpenGl_homework1\OpenGl_homework1.cpp(28,19): warning C4305: “参数”: 从“double”到“GLfloat”截断
+E:\AnimationLearnHomeWork\graphics2024\范振洲 22451151\Homework1\sln\OpenGl_homework1\OpenGl_homework1\OpenGl_homework1.cpp(28,14): warning C4305: “参数”: 从“double”到“GLfloat”截断
+E:\AnimationLearnHomeWork\graphics2024\范振洲 22451151\Homework1\sln\OpenGl_homework1\OpenGl_homework1\OpenGl_homework1.cpp(29,19): warning C4305: “参数”: 从“double”到“GLfloat”截断
+E:\AnimationLearnHomeWork\graphics2024\范振洲 22451151\Homework1\sln\OpenGl_homework1\OpenGl_homework1\OpenGl_homework1.cpp(29,14): warning C4305: “参数”: 从“double”到“GLfloat”截断
+E:\AnimationLearnHomeWork\graphics2024\范振洲 22451151\Homework1\sln\OpenGl_homework1\OpenGl_homework1\OpenGl_homework1.cpp(31,19): warning C4305: “参数”: 从“double”到“GLfloat”截断
+E:\AnimationLearnHomeWork\graphics2024\范振洲 22451151\Homework1\sln\OpenGl_homework1\OpenGl_homework1\OpenGl_homework1.cpp(31,14): warning C4305: “参数”: 从“double”到“GLfloat”截断
+E:\AnimationLearnHomeWork\graphics2024\范振洲 22451151\Homework1\sln\OpenGl_homework1\OpenGl_homework1\OpenGl_homework1.cpp(32,14): warning C4305: “参数”: 从“double”到“GLfloat”截断
+E:\AnimationLearnHomeWork\graphics2024\范振洲 22451151\Homework1\sln\OpenGl_homework1\OpenGl_homework1\OpenGl_homework1.cpp(34,19): warning C4305: “参数”: 从“double”到“GLfloat”截断
+  OpenGl_homework1.vcxproj -> E:\AnimationLearnHomeWork\graphics2024\范振洲 22451151\Homework1\sln\OpenGl_homework1\x64\Debug\OpenGl_homework1.exe

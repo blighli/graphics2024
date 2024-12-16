@@ -274,7 +274,7 @@ void OpenGLWidget::paintGL()
     earth_model.rotate(earth_revolve_angle,0,0,1);
     earth_model.translate(sun_earth_distance/earth_sun_radius_ratio,0,0);
     earth_model.rotate(-earth_revolve_angle,0,0,1); //消除公转角速度
-    earth_model.rotate(earth_obliquity_of_the_ecliptic,1,0,0); // 地球黄道夹角，不太对,这里只是简单模拟一下
+    earth_model.rotate(earth_obliquity_of_the_ecliptic,1,0,0); // 地球黄道夹角，可能不太对,这里只是简单模拟一下
     earth_model.rotate(earth_rot_angle,0,0,1);
 
 
@@ -443,7 +443,7 @@ void OpenGLWidget::updateCamera(){
         cameraTarget.y()-camera_radius*qCos(camera_theta)*qCos(camera_alpha),
         cameraTarget.z()+camera_radius*qSin(camera_theta));
     cameraDirection=cameraPos-cameraTarget;
-    // 注意当 camera的朝向和水平轴重合会出现无法计算叉积的情况，那么就要SS
+    // 注意当 camera的朝向和水平重合会出现无法计算叉积的情况，那么就要另外计算
     cameraDirection.normalize();
     if(abs(camera_theta-M_PI)<epi||abs(camera_theta)<epi||abs(camera_theta-2*M_PI)<epi){
         // theta 接近 0 PI 2PI 三种情况

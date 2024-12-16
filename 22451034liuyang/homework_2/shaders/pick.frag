@@ -7,5 +7,5 @@ uniform int code;
 void main()
 {
 
-    FragColor = vec4(code/255.0F,0.0f,0.0f,0.0f); // 透明不显示
+    FragColor = vec4(code/255.0F,0.0f,0.0f,0.0f); // code在R位置上
 }

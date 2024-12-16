@@ -71,6 +71,7 @@ CMakeLists.txt.user*
 # --------
 *.dll
 *.exe
+*.~vsdx
 
 build/
 

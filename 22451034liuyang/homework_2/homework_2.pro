@@ -30,6 +30,6 @@ LIBS += -lopengl32
 RESOURCES += \
     textures.qrc
 
-ICON = images/icon.png
+RC_ICONS = icon.ico #图标
 
 

@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="10,1">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="12,1">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetDefaultConstraint</enum>
+      </property>
+      <item>
+       <widget class="OpenGLWidget" name="openGLWidget"/>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_17">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_12" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>6</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>19</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <property name="leftMargin">
+              <number>3</number>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_12">
+               <property name="minimumSize">
+                <size>
+                 <width>6</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>16777215</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>θ</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="thetaSlider">
+               <property name="minimumSize">
+                <size>
+                 <width>15</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_14" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>6</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>19</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="leftMargin">
+              <number>3</number>
+             </property>
+             <property name="rightMargin">
+              <number>3</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_13">
+               <property name="minimumSize">
+                <size>
+                 <width>6</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>R</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QSlider" name="radiusSlider">
+               <property name="minimumSize">
+                <size>
+                 <width>15</width>
+                 <height>0</height>
+                </size>
+               </property>
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="resetCameraBtn">
+          <property name="text">
+           <string>重置摄像头</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="resetParamsBtn">
+          <property name="text">
+           <string>重置参数</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_8"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,7">
+      <item>
+       <widget class="QWidget" name="widget_13" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>α</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QSlider" name="alphaSlider">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget" native="true">
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item row="6" column="1">
+          <widget class="QWidget" name="widget_16" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_14">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>地球自转速度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="earthRotVelSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QWidget" name="widget_9" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>月球自转轨道与月球公转轨道夹角</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="moonTiltSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QWidget" name="widget_7" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>月球公转轨道与地球自转轨道夹角</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="moonEarthTiltSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QWidget" name="widget_10" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>日地距离</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="sunEarthDistanceSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QWidget" name="widget_5" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>地球公转轨道与太阳自转轨道</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="solarTiltSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QWidget" name="widget_6" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>地球黄道交角</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="earthTiltSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QWidget" name="widget_2" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>演进速度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="sunRotVelSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QWidget" name="widget_11" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>地月距离</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="earthMoonDistanceSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QWidget" name="widget_15" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string> 地球公转速度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="earthRevolveVelSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QWidget" name="widget_4" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>月地大小比例</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="moonEarthRatioSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QWidget" name="widget_8" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>太阳光强</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="sunLuxSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QWidget" name="widget_3" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>地日大小比例</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="earthSunRatioSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QWidget" name="widget_17" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_15">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>月球公转速度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="moonRevolveSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QWidget" name="widget_18" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_16">
+            <property name="topMargin">
+             <number>3</number>
+            </property>
+            <property name="bottomMargin">
+             <number>3</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string>月球自转速度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSlider" name="moonRotSlider">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1000</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>OpenGLWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header>openglwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

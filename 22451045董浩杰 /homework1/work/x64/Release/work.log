@@ -1,0 +1,20 @@
+﻿  loadBMP.cpp
+  main.cpp
+D:\GPT浏览器下载\opengl_sun\work\work\loadBMP.cpp(175,17): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\GPT浏览器下载\opengl_sun\work\work\loadBMP.cpp(176,35): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\GPT浏览器下载\opengl_sun\work\work\loadBMP.cpp(176,15): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\GPT浏览器下载\opengl_sun\work\work\main.cpp(25,31): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+D:\GPT浏览器下载\opengl_sun\work\work\main.cpp(25,36): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+D:\GPT浏览器下载\opengl_sun\work\work\main.cpp(25,41): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+D:\GPT浏览器下载\opengl_sun\work\work\main.cpp(67,29): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+D:\GPT浏览器下载\opengl_sun\work\work\main.cpp(67,33): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+D:\GPT浏览器下载\opengl_sun\work\work\main.cpp(67,37): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+D:\GPT浏览器下载\opengl_sun\work\work\main.cpp(103,16): warning C4305: “参数”: 从“double”到“GLfloat”截断
+D:\GPT浏览器下载\opengl_sun\work\work\main.cpp(113,15): warning C4305: “参数”: 从“double”到“GLfloat”截断
+D:\GPT浏览器下载\opengl_sun\work\work\main.cpp(115,16): warning C4305: “参数”: 从“double”到“GLfloat”截断
+  MouseEvent.cpp
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 18 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  work.vcxproj -> D:\GPT浏览器下载\opengl_sun\work\x64\Release\work.exe

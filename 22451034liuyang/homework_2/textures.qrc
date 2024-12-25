@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/earth.jpg</file>
+        <file>images/moon.jpg</file>
+        <file>images/sun.jpg</file>
+        <file>shaders/sphere.frag</file>
+        <file>shaders/sphere.vert</file>
+        <file>shaders/sun.vert</file>
+        <file>shaders/sun.frag</file>
+        <file>shaders/pick.vert</file>
+        <file>shaders/pick.frag</file>
+        <file>images/background.jpg</file>
+        <file>images/icon.png</file>
+    </qresource>
+</RCC>

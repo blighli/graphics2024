@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\zjuhomework\graphics2024\luoheng\Homework2\Homework2\src\main.cpp(238,34): warning C4267: “=”: 从“size_t”转换到“uint32_t”，可能丢失数据
+  Homework2.vcxproj -> D:\zjuhomework\graphics2024\luoheng\Homework2\bin\Debug-windows-x86_64\Homework2\Homework2.exe

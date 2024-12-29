@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d358b8fd46bc74848b112f9f0b447682, type: 3}
+  m_Name: "\u77F3\u65A7"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 7958945592178681526, guid: 0be6d44ec5272a749a8eff63ae430581, type: 3}
+    - {fileID: 22100000, guid: 3e80f7c6ddf6a6547b39c6254b37fde6, type: 2}
+    - {fileID: 8300000, guid: 0d3ae03a6543f454baa995f5e79299db, type: 3}
+    - {fileID: 8300000, guid: d860f37251143064595b61bfcda41b31, type: 3}
+    - {fileID: 6362917943175474994, guid: da59d45ac22882640b0856ef6d3b1001, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: ItemTypeInfo
+      Entry: 7
+      Data: 0|ItemWeaponInfo, Assembly-CSharp
+    - Name: WeaponType
+      Entry: 3
+      Data: 0
+    - Name: PrefabOnPlayer
+      Entry: 10
+      Data: 0
+    - Name: PositionOnPlayer
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0.345
+    - Name: 
+      Entry: 4
+      Data: -0.034
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: RotationOnPlayer
+      Entry: 7
+      Data: UnityEngine.Vector3, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: AnimatorController
+      Entry: 10
+      Data: 1
+    - Name: AttackValue
+      Entry: 4
+      Data: 1
+    - Name: AttackDurabilityCost
+      Entry: 4
+      Data: 1
+    - Name: AttackDistance
+      Entry: 4
+      Data: 1.5
+    - Name: AttackAudio
+      Entry: 10
+      Data: 2
+    - Name: HitAudio
+      Entry: 10
+      Data: 3
+    - Name: HitEffect
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+  Name: "\u77F3\u65A7"
+  ItemType: 0
+  MapObjectConfigID: 21
+  Description: "\u53EF\u4EE5\u780D\u6811"
+  Icon: {fileID: 21300000, guid: aed509809d0894dad916e5d1e414cb03, type: 3}

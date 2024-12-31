@@ -13,9 +13,16 @@
 ```shell
 # Make sure CMake version 3.16+
 
+# Make sure GitHub availability with your git proxy
+ 
 # cd <project_dir>
 cmake -S . -B build
 cmake --build build
+
+# If some EOL problems happen on win32, try to change lf to crlf:
+git config core.autocrlf true
+git rm --cached -r .
+git reset --hard
 ```
 
 ## Usage

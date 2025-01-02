@@ -13,13 +13,59 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="资源文件\texture">
+      <UniqueIdentifier>{a712b110-501c-4f85-944a-aa01d92a4564}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="vertex_shader.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="fragment_shader.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="vertex_shader_other.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="fragment_shader_other.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="texture\earth.jpg">
+      <Filter>资源文件\texture</Filter>
+    </Image>
+    <Image Include="texture\moon.jpg">
+      <Filter>资源文件\texture</Filter>
+    </Image>
+    <Image Include="texture\sun.jpg">
+      <Filter>资源文件\texture</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -16,9 +16,7 @@
 | GCC | gcc version 8.1.0 (x86_64-win32-seh-rev0, Built by MinGW-W64 project) |
 | 扩展 | GLFW, Glad, stb_image.h |
 ## 作业演示demo
-<video id="video" controls="" preload="none" poster="封面">
-      <source id="mp4" src="../images/homework2_demo.mp4" type="video/mp4">
-</video>
+![](https://github.com/Lweihan/graphics2024/tree/main/22451077%E6%9D%8E%E5%A8%81%E7%BF%B0/images/homework2_demo.gif)
 
 ## 1.扩展安装
 1.1 安装GLFW, 与作业一相同, 在GNuGet程序包管理中下载

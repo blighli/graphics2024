@@ -16,6 +16,9 @@
     <Filter Include="资源文件\texture">
       <UniqueIdentifier>{a712b110-501c-4f85-944a-aa01d92a4564}</UniqueIdentifier>
     </Filter>
+    <Filter Include="资源文件\model">
+      <UniqueIdentifier>{0f8954d2-9691-4ced-843c-fedf02e893de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="OpenGL.cpp">
@@ -28,6 +31,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Camera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportedModel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -45,6 +54,18 @@
     <None Include="fragment_shader_other.glsl">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="model\drone_costum.blend">
+      <Filter>资源文件\model</Filter>
+    </None>
+    <None Include="model\drone_costum.blend1">
+      <Filter>资源文件\model</Filter>
+    </None>
+    <None Include="model\drone_costum.fbx">
+      <Filter>资源文件\model</Filter>
+    </None>
+    <None Include="model\drone_costum.mtl">
+      <Filter>资源文件\model</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shader.h">
@@ -54,6 +75,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="stb_image.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportedModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -67,5 +94,16 @@
     <Image Include="texture\sun.jpg">
       <Filter>资源文件\texture</Filter>
     </Image>
+    <Image Include="texture\Aperture-icon.png">
+      <Filter>资源文件\texture</Filter>
+    </Image>
+    <Image Include="texture\Blury.jpg">
+      <Filter>资源文件\texture</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="model\drone_costum.obj">
+      <Filter>资源文件\model</Filter>
+    </Object>
   </ItemGroup>
 </Project>

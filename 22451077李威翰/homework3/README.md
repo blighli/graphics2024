@@ -15,6 +15,9 @@
 | GCC | gcc version 8.1.0 (x86_64-win32-seh-rev0, Built by MinGW-W64 project) |
 | 扩展 | GLFW, ASSIMP, stb_image.h |
 ## 作业演示demo
+如果视频无法加载, 可以访问https://raw.githubusercontent.com/Lweihan/graphics2024/refs/heads/main/22451077%E6%9D%8E%E5%A8%81%E7%BF%B0/images/homework3_demo.gif
+
+![demo](https://raw.githubusercontent.com/Lweihan/graphics2024/refs/heads/main/22451077%E6%9D%8E%E5%A8%81%E7%BF%B0/images/homework3_demo.gif)
 
 ## 1.扩展安装
 1.1 安装ASSIMP, 与作业一相同, 在GNuGet程序包管理中下载

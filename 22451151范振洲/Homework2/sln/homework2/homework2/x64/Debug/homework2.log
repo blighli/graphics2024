@@ -1,0 +1,4 @@
+﻿  homework2.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(127,1): warning C4005: “CALLBACK”: 宏重定义
+D:\vs2022\VC\Tools\MSVC\14.37.32822\include\gl\glut.h(33,1): message : 参见“CALLBACK”的前一个定义
+LINK : fatal error LNK1104: 无法打开文件“glut32.lib”

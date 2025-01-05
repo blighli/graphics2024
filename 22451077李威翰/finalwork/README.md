@@ -12,7 +12,8 @@
 | GCC | gcc version 8.1.0 (x86_64-win32-seh-rev0, Built by MinGW-W64 project) |
 | 开发工具 | kokomi.js |
 ## 作业演示demo
-
+如果视频无法显示，可以访问https://raw.githubusercontent.com/Lweihan/graphics2024/refs/heads/main/22451077%E6%9D%8E%E5%A8%81%E7%BF%B0/images/finalwork_demo.gif
+![demo](https://raw.githubusercontent.com/Lweihan/graphics2024/refs/heads/main/22451077%E6%9D%8E%E5%A8%81%E7%BF%B0/images/finalwork_demo.gif)
 ## QuickStart
 
 安装依赖

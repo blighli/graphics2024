@@ -1,0 +1,23 @@
+﻿  ConsoleApplication5.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(127,9): warning C4005: 'CALLBACK': macro redefinition
+  (compiling source file 'ConsoleApplication5.cpp')
+      C:\Users\13625\source\repos\ConsoleApplication5\Dependencies\glut\glut.h(33,13):
+      see previous definition of 'CALLBACK'
+  
+C:\Users\13625\source\repos\ConsoleApplication5\ConsoleApplication5\ConsoleApplication5.cpp(72,65): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutInit referenced in function main
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutInitDisplayMode referenced in function main
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutInitWindowPosition referenced in function main
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutInitWindowSize referenced in function main
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutMainLoop referenced in function main
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutCreateWindow referenced in function main
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutPostRedisplay referenced in function "void __cdecl OnTimer(int)" (?OnTimer@@YAXH@Z)
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutSwapBuffers referenced in function "void __cdecl OnDisplay(void)" (?OnDisplay@@YAXXZ)
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutDisplayFunc referenced in function main
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutReshapeFunc referenced in function main
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol glutTimerFunc referenced in function "void __cdecl OnTimer(int)" (?OnTimer@@YAXH@Z)
+ConsoleApplication5.obj : error LNK2019: unresolved external symbol auxDIBImageLoadW referenced in function "void __cdecl Init(void)" (?Init@@YAXXZ)
+C:\Users\13625\source\repos\ConsoleApplication5\Dependencies\glew\lib\Release\Win32\glew32s.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\13625\source\repos\ConsoleApplication5\Dependencies\glut\glut32.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\13625\source\repos\ConsoleApplication5\Dependencies\glut\glut.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\Users\13625\source\repos\ConsoleApplication5\x64\Debug\ConsoleApplication5.exe : fatal error LNK1120: 12 unresolved externals

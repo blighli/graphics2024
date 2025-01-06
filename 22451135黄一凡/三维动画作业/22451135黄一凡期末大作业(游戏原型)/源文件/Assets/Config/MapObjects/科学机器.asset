@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4b8c741d9697324db8c6f5dba619b56, type: 3}
+  m_Name: "\u79D1\u5B66\u673A\u5668"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  IsEmpty: 0
+  MapVertexType: 0
+  Prefab: {fileID: 6027410751647593745, guid: e4e2ba0649619b647868d06be1de22de, type: 3}
+  MapIconSprite: {fileID: 21300000, guid: bd9d5cca493a3af49a0b189a4646f1e2, type: 3}
+  IconSize: 1
+  DestroyDays: -1
+  Probability: 0
+  Description: "\u62E5\u62B1\u79D1\u6280\u5427\uFF01"

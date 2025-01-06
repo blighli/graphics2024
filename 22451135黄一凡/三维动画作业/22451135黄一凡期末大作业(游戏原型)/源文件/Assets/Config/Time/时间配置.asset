@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51c119f0396eea04ca0fdfb1d476f0f3, type: 3}
+  m_Name: "\u65F6\u95F4\u914D\u7F6E"
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  timeStateConfigs:
+  - durationTime: 150
+    sunIntensity: 0.5
+    sunColor: {r: 1, g: 0.8259597, b: 0.495283, a: 0}
+    sunRotation: {x: 30, y: 15, z: 0}
+    sunQuaternion: {x: 0.25660482, y: 0.12607862, z: -0.033782665, w: 0.9576622}
+    fog: 1
+    bgAudioClip: {fileID: 8300000, guid: d87b5b3f06f4784468306a3a46b61f1f, type: 3}
+  - durationTime: 200
+    sunIntensity: 1
+    sunColor: {r: 1, g: 0.95039684, b: 0.75, a: 0}
+    sunRotation: {x: 60, y: 0, z: 0}
+    sunQuaternion: {x: 0.5, y: 0, z: 0, w: 0.8660254}
+    fog: 0
+    bgAudioClip: {fileID: 0}
+  - durationTime: 30
+    sunIntensity: 0.3
+    sunColor: {r: 1, g: 0.57211643, b: 0.08018869, a: 0}
+    sunRotation: {x: 180, y: 90, z: 0}
+    sunQuaternion: {x: 0.70710677, y: -0.00000003090862, z: -0.70710677, w: -0.00000003090862}
+    fog: 0
+    bgAudioClip: {fileID: 8300000, guid: 21538f6160ff48040a8488deb4ed6d5e, type: 3}
+  - durationTime: 60
+    sunIntensity: 0
+    sunColor: {r: 0, g: 0, b: 0, a: 0}
+    sunRotation: {x: 180, y: 90, z: 0}
+    sunQuaternion: {x: 0.70710677, y: -0.00000003090862, z: -0.70710677, w: -0.00000003090862}
+    fog: 0
+    bgAudioClip: {fileID: 0}
+  - durationTime: 30
+    sunIntensity: 0
+    sunColor: {r: 0, g: 0, b: 0, a: 0}
+    sunRotation: {x: 180, y: 90, z: 0}
+    sunQuaternion: {x: 0.70710677, y: -0.00000003090862, z: -0.70710677, w: -0.00000003090862}
+    fog: 0
+    bgAudioClip: {fileID: 0}

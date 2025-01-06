@@ -30,7 +30,7 @@ assets/：包含三维模型和纹理等静态资源。
 include/：包含项目所需的所有头文件。
 shaders/：存放 GLSL 着色器代码。
 
-![示例](https://github.com/Kswink/graphics2024/blob/master/assignment3/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E4%B8%80.png?raw=true)
+![示例](https://github.com/Kswink/graphics2024/blob/master/22451222%E9%87%91%E6%B3%BD%E5%B9%B3/assignment3/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E4%B8%80.png?raw=true)
 
-![示例](https://github.com/Kswink/graphics2024/blob/master/assignment3/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E4%BA%8C.png?raw=true)
+![示例](https://github.com/Kswink/graphics2024/blob/master/22451222%E9%87%91%E6%B3%BD%E5%B9%B3/assignment3/%E6%A8%A1%E5%9E%8B%E5%9B%BE%E4%BA%8C.png?raw=true)
 

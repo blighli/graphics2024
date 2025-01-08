@@ -1,0 +1,14 @@
+﻿  ComplexModel.cpp
+D:\repository\graphics2024\22451211王继航\ComplexModel\ComplexModel\shader.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  (编译源文件“ComplexModel.cpp”)
+  
+D:\repository\graphics2024\22451211王继航\ComplexModel\ComplexModel\ComplexModel.cpp(78,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\ComplexModel\ComplexModel\ComplexModel.cpp(79,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\ComplexModel\ComplexModel\ComplexModel.cpp(82,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\ComplexModel\ComplexModel\ComplexModel.cpp(83,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\ComplexModel\ComplexModel\ComplexModel.cpp(84,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\ComplexModel\ComplexModel\ComplexModel.cpp(85,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\ComplexModel\ComplexModel\ComplexModel.cpp(90,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\ComplexModel\ComplexModel\ComplexModel.cpp(224,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\ComplexModel\ComplexModel\ComplexModel.cpp(289,50): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+  ComplexModel.vcxproj -> D:\repository\graphics2024\22451211王继航\ComplexModel\x64\Debug\ComplexModel.exe

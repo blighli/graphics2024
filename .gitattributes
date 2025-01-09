@@ -1,0 +1,2 @@
+*.rar filter=lfs diff=lfs merge=lfs -text
+/22451065高梓钦/task3 filter=lfs diff=lfs merge=lfs -text

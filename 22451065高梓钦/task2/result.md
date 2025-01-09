@@ -1,4 +1,4 @@
-![image-20250109133044730](C:\Users\Adminis\AppData\Roaming\Typora\typora-user-images\image-20250109133044730.png)
+![image-20250109133044730](image-20250109133044730.png)
 
 使用vertex shader和fragment shader实现光照和地球模型。phong光照模型如下：
 

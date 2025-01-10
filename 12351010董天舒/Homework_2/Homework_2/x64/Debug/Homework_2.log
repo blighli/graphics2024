@@ -1,0 +1,45 @@
+﻿  glad.c
+  main.cpp
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(27,15): error C2466: 不能分配常量大小为 0 的数组
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(123,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(124,9): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(124,14): error C2065: “mat4”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(124,19): error C2146: 语法错误: 缺少“;”(在标识符“model”的前面)
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(124,19): error C2065: “model”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(124,27): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(124,32): error C3861: “mat4”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(125,9): error C2065: “model”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(125,17): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(125,29): error C2065: “model”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(125,36): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(125,41): error C3861: “radians”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(125,57): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(125,62): error C3861: “vec3”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(125,22): error C3861: “rotate”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(127,9): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(127,14): error C2065: “mat4”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(127,19): error C2146: 语法错误: 缺少“;”(在标识符“view”的前面)
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(127,19): error C2065: “view”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(127,26): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(127,41): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(127,46): error C3861: “mat4”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(127,58): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(127,63): error C3861: “vec3”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(127,31): error C3861: “translate”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(128,9): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(128,14): error C2065: “mat4”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(128,19): error C2146: 语法错误: 缺少“;”(在标识符“projection”的前面)
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(128,19): error C2065: “projection”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(128,32): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(128,49): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(128,54): error C3861: “radians”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(128,37): error C3861: “perspective”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(134,51): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(134,66): error C2065: “model”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(134,56): error C3861: “value_ptr”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(135,50): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(135,65): error C2065: “view”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(135,55): error C3861: “value_ptr”: 找不到标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(136,50): error C2653: “glm”: 不是类或命名空间名称
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(136,65): error C2065: “projection”: 未声明的标识符
+D:\P\Course\3DAnime\graphics2024\12351010董天舒\Homework_2\Homework_2\main.cpp(136,55): error C3861: “value_ptr”: 找不到标识符

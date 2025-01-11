@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>WebGL 互动魔法粒子效果</title>
+    <style>
+        body { margin: 0; background-color: #000; overflow: hidden; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <canvas id="glcanvas"></canvas>
+
+    <!-- 引入 glMatrix 库 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+
+    <script>
+        // 获取 canvas 元素并初始化 WebGL 上下文
+        const canvas = document.getElementById('glcanvas');
+        const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+
+        if (!gl) {
+            alert('无法初始化 WebGL。您的浏览器可能不支持它。');
+        }
+
+        // 设置画布大小为窗口大小
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // 着色器源代码
+        const vsSource = `
+            attribute vec3 aPosition;
+            attribute float aPointSize;
+            attribute vec4 aColor;
+
+            uniform mat4 uProjectionMatrix;
+            uniform mat4 uModelViewMatrix;
+
+            varying lowp vec4 vColor;
+
+            void main(void) {
+                gl_Position = uProjectionMatrix * uModelViewMatrix * vec4(aPosition, 1.0);
+                gl_PointSize = aPointSize;
+                vColor = aColor;
+            }
+        `;
+
+        const fsSource = `
+            precision mediump float;
+
+            varying lowp vec4 vColor;
+
+            void main(void) {
+                // 创建一个圆形点
+                float dist = distance(gl_PointCoord, vec2(0.5, 0.5));
+                if (dist > 0.5) {
+                    discard;
+                }
+
+                // 发光效果
+                float alpha = vColor.a * (1.0 - dist * 2.0);
+                gl_FragColor = vec4(vColor.rgb, alpha);
+            }
+        `;
+
+        // 初始化着色器程序
+        function initShaderProgram(gl, vsSource, fsSource) {
+            const vertexShader = loadShader(gl, gl.VERTEX_SHADER, vsSource);
+            const fragmentShader = loadShader(gl, gl.FRAGMENT_SHADER, fsSource);
+
+            const shaderProgram = gl.createProgram();
+            gl.attachShader(shaderProgram, vertexShader);
+            gl.attachShader(shaderProgram, fragmentShader);
+            gl.linkProgram(shaderProgram);
+
+            if (!gl.getProgramParameter(shaderProgram, gl.LINK_STATUS)) {
+                alert('无法初始化着色器程序: ' + gl.getProgramInfoLog(shaderProgram));
+                return null;
+            }
+
+            return shaderProgram;
+        }
+
+        // 加载和编译着色器
+        function loadShader(gl, type, source) {
+            const shader = gl.createShader(type);
+            gl.shaderSource(shader, source);
+            gl.compileShader(shader);
+
+            if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+                alert('着色器编译失败: ' + gl.getShaderInfoLog(shader));
+                gl.deleteShader(shader);
+                return null;
+            }
+
+            return shader;
+        }
+
+        // 初始化着色器程序
+        const shaderProgram = initShaderProgram(gl, vsSource, fsSource);
+
+        // 获取属性和统一变量的位置
+        const programInfo = {
+            program: shaderProgram,
+            attribLocations: {
+                position: gl.getAttribLocation(shaderProgram, 'aPosition'),
+                pointSize: gl.getAttribLocation(shaderProgram, 'aPointSize'),
+                color: gl.getAttribLocation(shaderProgram, 'aColor'),
+            },
+            uniformLocations: {
+                projectionMatrix: gl.getUniformLocation(shaderProgram, 'uProjectionMatrix'),
+                modelViewMatrix: gl.getUniformLocation(shaderProgram, 'uModelViewMatrix'),
+            },
+        };
+
+        // 粒子类
+        class Particle {
+            constructor(position, velocity, color, size, lifetime) {
+                this.position = position; // vec3
+                this.velocity = velocity; // vec3
+                this.color = color;       // vec4
+                this.size = size;         // float
+                this.lifetime = lifetime; // float
+                this.age = 0.0;           // float
+            }
+
+            update(deltaTime) {
+                this.age += deltaTime;
+                if (this.age < this.lifetime) {
+                    // 更新位置
+                    this.position[0] += this.velocity[0] * deltaTime;
+                    this.position[1] += this.velocity[1] * deltaTime;
+                    this.position[2] += this.velocity[2] * deltaTime;
+
+                    // 简单的重力效果
+                    this.velocity[1] -= 9.81 * deltaTime * 0.1;
+
+                    // 更新透明度
+                    this.color[3] = Math.max(1.0 - this.age / this.lifetime, 0.0);
+                }
+            }
+
+            isAlive() {
+                return this.age < this.lifetime;
+            }
+        }
+
+        // 粒子系统类
+        class ParticleSystem {
+            constructor(maxParticles) {
+                this.maxParticles = maxParticles;
+                this.particles = [];
+                this.positions = new Float32Array(maxParticles * 3);
+                this.colors = new Float32Array(maxParticles * 4);
+                this.sizes = new Float32Array(maxParticles);
+                this.vertexCount = 0;
+
+                // 创建缓冲区
+                this.positionBuffer = gl.createBuffer();
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.positionBuffer);
+                gl.bufferData(gl.ARRAY_BUFFER, this.positions, gl.DYNAMIC_DRAW);
+
+                this.colorBuffer = gl.createBuffer();
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.colorBuffer);
+                gl.bufferData(gl.ARRAY_BUFFER, this.colors, gl.DYNAMIC_DRAW);
+
+                this.sizeBuffer = gl.createBuffer();
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.sizeBuffer);
+                gl.bufferData(gl.ARRAY_BUFFER, this.sizes, gl.DYNAMIC_DRAW);
+            }
+
+            emit(position, velocity, color, size, lifetime) {
+                if (this.particles.length >= this.maxParticles) {
+                    return;
+                }
+                const p = new Particle(position.slice(), velocity.slice(), color.slice(), size, lifetime);
+                this.particles.push(p);
+            }
+
+            update(deltaTime) {
+                this.vertexCount = 0;
+                for (let i = this.particles.length - 1; i >= 0; i--) {
+                    const p = this.particles[i];
+                    p.update(deltaTime);
+                    if (!p.isAlive()) {
+                        this.particles.splice(i, 1);
+                        continue;
+                    }
+                    // 更新位置数据
+                    this.positions[this.vertexCount * 3] = p.position[0];
+                    this.positions[this.vertexCount * 3 + 1] = p.position[1];
+                    this.positions[this.vertexCount * 3 + 2] = p.position[2];
+
+                    // 更新颜色数据
+                    this.colors[this.vertexCount * 4] = p.color[0];
+                    this.colors[this.vertexCount * 4 + 1] = p.color[1];
+                    this.colors[this.vertexCount * 4 + 2] = p.color[2];
+                    this.colors[this.vertexCount * 4 + 3] = p.color[3];
+
+                    // 更新大小数据
+                    this.sizes[this.vertexCount] = p.size;
+
+                    this.vertexCount++;
+                }
+
+                // 更新缓冲区数据
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.positionBuffer);
+                gl.bufferSubData(gl.ARRAY_BUFFER, 0, this.positions);
+
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.colorBuffer);
+                gl.bufferSubData(gl.ARRAY_BUFFER, 0, this.colors);
+
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.sizeBuffer);
+                gl.bufferSubData(gl.ARRAY_BUFFER, 0, this.sizes);
+            }
+
+            draw(projectionMatrix, modelViewMatrix) {
+                gl.useProgram(programInfo.program);
+
+                // 设置投影矩阵
+                gl.uniformMatrix4fv(programInfo.uniformLocations.projectionMatrix, false, projectionMatrix);
+
+                // 设置模型视图矩阵
+                gl.uniformMatrix4fv(programInfo.uniformLocations.modelViewMatrix, false, modelViewMatrix);
+
+                // 绑定位置缓冲区
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.positionBuffer);
+                gl.vertexAttribPointer(
+                    programInfo.attribLocations.position,
+                    3,
+                    gl.FLOAT,
+                    false,
+                    0,
+                    0
+                );
+                gl.enableVertexAttribArray(programInfo.attribLocations.position);
+
+                // 绑定颜色缓冲区
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.colorBuffer);
+                gl.vertexAttribPointer(
+                    programInfo.attribLocations.color,
+                    4,
+                    gl.FLOAT,
+                    false,
+                    0,
+                    0
+                );
+                gl.enableVertexAttribArray(programInfo.attribLocations.color);
+
+                // 绑定大小缓冲区
+                gl.bindBuffer(gl.ARRAY_BUFFER, this.sizeBuffer);
+                gl.vertexAttribPointer(
+                    programInfo.attribLocations.pointSize,
+                    1,
+                    gl.FLOAT,
+                    false,
+                    0,
+                    0
+                );
+                gl.enableVertexAttribArray(programInfo.attribLocations.pointSize);
+
+                // 绘制粒子
+                gl.drawArrays(gl.POINTS, 0, this.vertexCount);
+            }
+        }
+
+        // 创建粒子系统实例
+        const particleSystem = new ParticleSystem(5000);
+
+        // 设置混合模式以实现发光效果
+        gl.enable(gl.BLEND);
+        gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
+
+        // 创建透视投影矩阵
+        const fieldOfView = 45 * Math.PI / 180; // 45度
+        const aspect = gl.canvas.clientWidth / gl.canvas.clientHeight;
+        const zNear = 0.1;
+        const zFar = 100.0;
+        const projectionMatrix = mat4.create();
+        mat4.perspective(projectionMatrix, fieldOfView, aspect, zNear, zFar);
+
+        // 创建模型视图矩阵
+        const modelViewMatrix = mat4.create();
+        mat4.translate(modelViewMatrix, modelViewMatrix, [0.0, 0.0, -10.0]);
+
+        // 旋转角度
+        let rotation = 0.0;
+
+        // 时间
+        let then = 0;
+
+        // 鼠标位置
+        const mouse = {
+            x: 0,
+            y: 0
+        };
+
+        // 将鼠标坐标转换为 WebGL 坐标
+        function getMousePosition(event) {
+            const rect = canvas.getBoundingClientRect();
+            mouse.x = (event.clientX - rect.left) / rect.width * 2 - 1;
+            mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+        }
+
+        // 监听鼠标点击事件
+        canvas.addEventListener('mousedown', (event) => {
+            getMousePosition(event);
+            emitParticles(mouse.x, mouse.y);
+        });
+
+        // 监听鼠标移动事件
+        canvas.addEventListener('mousemove', (event) => {
+            getMousePosition(event);
+            // 可选：实时发射粒子或更新方向
+            // emitParticles(mouse.x, mouse.y);
+        });
+
+        // 发射粒子函数
+        function emitParticles(x, y) {
+            const numParticles = 100;
+            for (let i = 0; i < numParticles; i++) {
+                // 将 2D 鼠标坐标转换为 3D 世界坐标
+                const pos = [
+                    x * 5.0, // 放大坐标范围
+                    y * 5.0,
+                    0.0
+                ];
+
+                // 随机方向和速度
+                const angle = Math.random() * 2 * Math.PI;
+                const speed = 2.0 + Math.random() * 3.0;
+                const velocity = [
+                    Math.cos(angle) * speed,
+                    Math.sin(angle) * speed,
+                    0.0
+                ];
+
+                // 随机颜色
+                const color = [
+                    Math.random(),
+                    Math.random(),
+                    Math.random(),
+                    1.0
+                ];
+
+                // 随机大小和生命周期
+                const size = 10.0 + Math.random() * 20.0;
+                const lifetime = 2.0 + Math.random() * 3.0;
+
+                particleSystem.emit(pos, velocity, color, size, lifetime);
+            }
+        }
+
+        // 渲染循环
+        function render(now) {
+            now *= 0.001; // 转换为秒
+            const deltaTime = now - then;
+            then = now;
+
+            // 更新粒子系统
+            particleSystem.update(deltaTime);
+
+            // 清除画布
+            gl.clearColor(0.0, 0.0, 0.0, 1.0); // 黑色背景
+            gl.clearDepth(1.0);
+            gl.enable(gl.DEPTH_TEST);
+            gl.depthFunc(gl.LEQUAL);
+            gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+
+            // 旋转整个场景
+            rotation += deltaTime * 0.1;
+            const rotationMatrix = mat4.create();
+            mat4.rotate(rotationMatrix, rotationMatrix, rotation, [0, 0, 1]);
+            const finalModelViewMatrix = mat4.create();
+            mat4.multiply(finalModelViewMatrix, modelViewMatrix, rotationMatrix);
+
+            // 绘制粒子系统
+            particleSystem.draw(projectionMatrix, finalModelViewMatrix);
+
+            requestAnimationFrame(render);
+        }
+        requestAnimationFrame(render);
+
+        // 处理窗口缩放
+        window.addEventListener('resize', () => {
+            mat4.perspective(projectionMatrix, fieldOfView, gl.canvas.clientWidth / gl.canvas.clientHeight, zNear, zFar);
+        });
+    </script>
+</body>
+</html>

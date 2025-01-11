@@ -1,0 +1,1 @@
+.\viewers\bin\SIBR_gaussianViewer_app -m output/train-result

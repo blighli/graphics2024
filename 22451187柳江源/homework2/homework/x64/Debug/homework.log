@@ -1,0 +1,6 @@
+﻿  glad.c
+  homework2.cpp
+D:\desktop\研究生\研一\课程\3D\22451187柳江源\homework2\homework2.cpp(394,53): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\22451187柳江源\homework2\homework2.cpp(419,55): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\22451187柳江源\homework2\homework2.cpp(438,54): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+  homework.vcxproj -> D:\desktop\研究生\研一\课程\3D\22451187柳江源\homework2\x64\Debug\homework.exe

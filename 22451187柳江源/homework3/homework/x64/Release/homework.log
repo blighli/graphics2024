@@ -1,0 +1,75 @@
+﻿  glad.c
+  homework.cpp
+D:\desktop\研究生\研一\课程\3D\wokr\homework\homework.cpp(193,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\homework.cpp(194,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\homework.cpp(200,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\homework.cpp(201,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\homework.cpp(202,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\homework.cpp(203,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\homework.cpp(517,50): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(207,15): warning C4244: “=”: 从“double”转换到“TReal”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(207,15): warning C4244:         with
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(207,15): warning C4244:         [
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(207,15): warning C4244:             TReal=float
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(207,15): warning C4244:         ]
+  (编译源文件“homework.cpp”)
+      D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(207,15):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\anim.h(107,24):
+          查看对正在编译的 类 模板 实例化“aiQuaterniont<float>”的引用
+          D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(186,1):
+          在编译 类 模板 成员函数“void aiQuaterniont<float>::Interpolate(aiQuaterniont<float> &,const aiQuaterniont<float> &,const aiQuaterniont<float> &,TReal)”时
+          with
+          [
+              TReal=float
+          ]
+              D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\anim.h(435,28):
+              请参阅 "Assimp::Interpolator<aiQuaternion>::operator ()" 中对 "aiQuaterniont<float>::Interpolate" 的第一个引用
+  
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(208,14): warning C4244: “=”: 从“double”转换到“TReal”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(208,14): warning C4244:         with
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(208,14): warning C4244:         [
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(208,14): warning C4244:             TReal=float
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(208,14): warning C4244:         ]
+  (编译源文件“homework.cpp”)
+  
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(209,61): warning C4244: “=”: 从“double”转换到“TReal”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(209,61): warning C4244:         with
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(209,61): warning C4244:         [
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(209,61): warning C4244:             TReal=float
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(209,61): warning C4244:         ]
+  (编译源文件“homework.cpp”)
+  
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(210,33): warning C4244: “=”: 从“double”转换到“TReal”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(210,33): warning C4244:         with
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(210,33): warning C4244:         [
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(210,33): warning C4244:             TReal=float
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\quaternion.inl(210,33): warning C4244:         ]
+  (编译源文件“homework.cpp”)
+  
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\vector3.inl(93,13): warning C4244: “return”: 从“double”转换到“TReal”，可能丢失数据
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\vector3.inl(93,13): warning C4244:         with
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\vector3.inl(93,13): warning C4244:         [
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\vector3.inl(93,13): warning C4244:             TReal=float
+D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\vector3.inl(93,13): warning C4244:         ]
+  (编译源文件“homework.cpp”)
+      D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\vector3.inl(93,13):
+      模板实例化上下文(最早的实例化上下文)为
+          D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\types.h(150,22):
+          查看对正在编译的 类 模板 实例化“aiVector3t<float>”的引用
+          D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\vector3.inl(142,91):
+          在编译 类 模板 成员函数“bool aiVector3t<float>::operator ==(const aiVector3t<float> &) const”时
+              D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\anim.h(82,3):
+              请参阅 "aiVectorKey::operator ==" 中对 "aiVector3t<float>::operator ==" 的第一个引用
+          D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\vector3.inl(92,57):
+          在编译 类 模板 成员函数“TReal aiVector3t<TReal>::Length(void) const”时
+          with
+          [
+              TReal=float
+          ]
+              D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\vector3.inl(98,8):
+              请参阅 "aiVector3t<float>::Normalize" 中对 "aiVector3t<float>::Length" 的第一个引用
+              D:\desktop\研究生\研一\课程\3D\wokr\homework\packages\Assimp.3.0.0\build\native\include\assimp\camera.h(191,50):
+              请参阅 "aiCamera::GetCameraMatrix" 中对 "aiVector3t<float>::Normalize" 的第一个引用
+  
+test.obj : fatal error LNK1107: 文件无效或损坏: 无法在 0xB226F 处读取

@@ -1,0 +1,4 @@
+﻿  homework2.cpp
+D:\DM\vsproject\OpenGL\homework2\homework2.cpp(153,25): warning C4244: “参数”: 从“GLfloat”转换到“GLint”，可能丢失数据
+D:\DM\vsproject\OpenGL\homework2\homework2.cpp(148,17): warning C4101: “winX”: 未引用的局部变量
+  homework2.vcxproj -> D:\DM\vsproject\OpenGL\Debug\homework2.exe

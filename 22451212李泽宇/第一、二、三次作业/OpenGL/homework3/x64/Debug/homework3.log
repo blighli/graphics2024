@@ -1,0 +1,10 @@
+﻿  homework3.cpp
+D:\DM\vsproject\OpenGL\homework3\homework3.cpp(254,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DM\vsproject\OpenGL\homework3\homework3.cpp(255,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DM\vsproject\OpenGL\homework3\homework3.cpp(259,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\DM\vsproject\OpenGL\homework3\homework3.cpp(260,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\DM\vsproject\OpenGL\homework3\homework3.cpp(261,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DM\vsproject\OpenGL\homework3\homework3.cpp(262,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\DM\vsproject\OpenGL\homework3\homework3.cpp(297,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\DM\vsproject\OpenGL\homework3\homework3.cpp(331,77): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+  homework3.vcxproj -> D:\DM\vsproject\OpenGL\x64\Debug\homework3.exe

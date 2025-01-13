@@ -1,0 +1,20 @@
+# 
+# Wavefront material file
+# Created in RealityCapture
+# Engine version v1.0.3.4987
+# 
+
+newmtl barricadecar1_Material
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+
+newmtl barricadecar1_Material_u1_v1
+Ka 1 1 1
+Kd 1 1 1
+d 1
+Ns 0
+illum 1
+map_Kd barricadecar1_u1_v1.jpg

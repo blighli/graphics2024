@@ -1,0 +1,8 @@
+﻿源.obj : error LNK2019: 无法解析的外部符号 glutInit，函数 main 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 glutInitDisplayMode，函数 main 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 glutInitWindowSize，函数 main 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 glutMainLoop，函数 main 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 glutCreateWindow，函数 main 中引用了该符号
+源.obj : error LNK2019: 无法解析的外部符号 glutDisplayFunc，函数 main 中引用了该符号
+D:\Install\Tool\Visual Studio\Community\VC\Tools\MSVC\14.42.34433\lib\x64\glut32.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+E:\硕士\研一上\冬\三维动画与交互\Project2\x64\Debug\Project2.exe : fatal error LNK1120: 6 个无法解析的外部命令

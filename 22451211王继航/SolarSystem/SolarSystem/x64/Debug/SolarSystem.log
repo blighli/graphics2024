@@ -1,0 +1,16 @@
+﻿  SolarSystem.cpp
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\shader.h(3,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  (编译源文件“SolarSystem.cpp”)
+  
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(75,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(76,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(79,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(80,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(81,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(82,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(87,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(238,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(263,50): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(282,50): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+D:\repository\graphics2024\22451211王继航\SolarSystem\SolarSystem\SolarSystem.cpp(302,50): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+  SolarSystem.vcxproj -> D:\repository\graphics2024\22451211王继航\SolarSystem\x64\Debug\SolarSystem.exe
